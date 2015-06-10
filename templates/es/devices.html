@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>NUESTROS DISPOSITIVOS</h4>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
+
+	<div class="container desc">
+	{% for key, device in devices.items() %}
+		<div class="row">
+			<br><br>
+			<div class="col-lg-6 centered">
+				<img src="assets/img/{{ device.pictures[0] }}" alt="">
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-6">
+				<h4>{{ device.code }} - {{ device.title }}</h4>
+				<p>{{ device.short_description }}</p>
+				<p>
+					{% for h in device.highlights %}
+					<i class="fa fa-circle-o"></i> {{ h }}<br/>
+					{% endfor %}
+					<i class="fa fa-link"></i> <a href="d_{{ device.code }}.html">Mas información</a>
+				</p>
+			</div>
+		</div><!-- row -->
+		<hr>
+	{% endfor %}
+
+		<br><br>
+	</div><!-- container -->
+
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	<div id="blue">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+				<h4>{{ code }}<br/>
+				<p>{{ title }}
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
+
+	<br/>
+	<br/>
+	<div class="container">
+
+	<div class="tabbable">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#general" data-toggle="tab">Descripción</a></li>
+			<li><a href="#specs" data-toggle="tab">Especificaciones</a></li>
+			<li><a href="#pane4" data-toggle="tab">Instrucciones, Planos y Código</a></li>
+			<li><a href="#multimedia" data-toggle="tab">Fotos y Videos</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id="general" class="tab-pane active">
+				<p>{{ description }}</p>
+				<hr>
+				<p>
+					{% for h in highlights %}
+					<i class="fa fa-circle-o"></i> {{ h }}<br/>
+					{% endfor %}
+				</p>
+			</div>
+			<div id="specs" class="tab-pane">
+				<table class="table table-hover">
+				<tbody>
+					{% for key, value in specs.items() %}
+					<tr>
+						<th scope="row">{{ key }}</th>
+						<td>{{ value }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+				</table>
+			</div>
+			<div id="build" class="tab-pane">
+				nada aun
+				<a href="{{ github }}"><i class="fa fa-github }}"></i>{{ github }}</a>
+			</div>
+			<div id="multimedia" class="tab-pane">
+				Nada aun
+			</div>
+		</div><!-- /.tab-content -->
+	</div><!-- /.tabbable -->
+
+</div>
+
+<br/>
+<br/>
+
+  {% endblock %}
