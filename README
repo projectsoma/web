@@ -1,0 +1,38 @@
+Sitio Web de Soma
+=================
+
+Es un sitio web estático que se genera con un script en Python.
+
+Instalar dependencias:
+
+   pip install jinja2 pyyaml
+
+En Python < 3.4:
+
+   pip install pathlib
+
+Ejecutar el script:
+
+   python generate.py
+
+
+Estructura del repositorio:
+
+   - devices: contiene archivos yaml con la ficha de cada dispositivo.
+              Debe haber un archivo por dispositivo. El nombre del archivo
+              deber ser el código del mismo. Se usa para llenar la lista
+              de dispositivos asi como también la pagina individual de cada
+              uno de ellos.
+
+   - site: contienen el sitio generado. **No editar los archivos HTML**
+
+   - templates: contiene las plantillas (en lenguaje jinja2) para cada una
+                de las paginas.
+
+      - base.html: plantilla base. Contiene encabezado y pie de pagina.
+      - index.html: plantilla para la principal.
+      - about.html: plantilla para Quienes Somos.
+      - devices.html: plantilla para Dispositivos. Se autollena
+                      de los archivos yaml.
+      - device.html: plantilla para la pagina individual de cada dispositivo.
+                     Se autollena de los archivos yaml.
