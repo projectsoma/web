@@ -55,16 +55,18 @@ def main(tmpl_folder, output_folder, devices):
 
         print('Processing device %s' % key)
 
-        with output_folder.joinpath('d_' + key + '.html').open(
+        with output_folder.joinpath('d', key + '.html').open(
             mode='w',
             encoding='utf-8') as fp:
             fp.write(main.render(pages=pages,
                                  active=None,
-                                 social=social, **device))
+                                 social=social,
+                                 rel_root='../',
+                                 **device))
 
     print('\nDone -> %s' % output_folder.joinpath('index.html'))
 
 if __name__ == '__main__':
     root = pathlib.Path('.')
     main(root.joinpath('templates', 'es'), root.joinpath('site'),
-         read_devices(root.joinpath('devices')))
+         read_devices(root.joinpath('devices', 'es')))

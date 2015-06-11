@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="shortcut icon" href="{{ rel_root }}assets/ico/favicon.png">
 
     <title>SOMA - Sistema de OptoMecánica Abierto</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ rel_root }}assets/css/bootstrap.css" rel="stylesheet">
+    <link href="{{ rel_root }}assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="{{ rel_root }}assets/css/main.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -41,7 +41,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             {% for page in pages %}
-            <li {{ 'class="active"' if active == page.url }}><a href="{{ page.url }}.html">{{ page.title }}</a></li>
+            <li {{ 'class="active"' if active == page.url }}><a href="{{ rel_root }}{{ page.url }}.html">{{ page.title }}</a></li>
             {% endfor %}
             <li><a data-toggle="modal" data-target="#myModal" href="#myModal"><i class="fa fa-envelope-o"></i></a></li>
           </ul>
@@ -106,6 +106,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="{{ rel_root }}assets/js/bootstrap.min.js"></script>
   </body>
 </html>
