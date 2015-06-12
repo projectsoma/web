@@ -1,14 +1,19 @@
-title: Rueda de filtros de 1\"
-short_description: Aca va la descripción corta
-description: Aca va la descripción
+title: Rueda de Filtros de 1"
+short_description: La rueda de filtros consiste en un sistema de engranajes, con 5 asientos para filtros de 1” y hasta 7 mm de espesor. Un motor por pasos mueve la rueda y un sensor de proximidad permite ubicar el filtro seleccionado.
+description: La rueda de filtros consiste en un sistema de engranajes, confeccionados mediante una impresora 3D, con asientos para 5 filtros de 1” y hasta 7 mm de espesor. Un motor por pasos mueve la rueda y un sensor de proximidad permite ubicar el filtro seleccionado. El sistema se enmarca en una carcasa plástica impresa en 3D que minimiza el ruido producido por el paso de luz externa.
 highlights:
- - Aplicación1
- - Aplicación2
- - Aplicacion3
+ - Tiempo de intercambio menor a 0,2s
+ - 5 posiciones para filtros de 1” y hasta 7mm de espesor
+ - secuencias de filtros programables
 github:
 pictures:
  - FW01_05.jpg
 movies:
  - bla
 specs:
-   velocidad: algo
+   Número de filtros: 5
+   Diámetro de Filtro: 1" (25,4mm)
+   Espesor de filtros: <7mm
+   Tiempo entre posiciones: <0,2s
+   Apertura del orificio: 0,85" (21,4mm)
+   Repetibilidad: +/-4º

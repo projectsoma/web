@@ -1,14 +1,15 @@
 title: Controlador
-short_description: Aca va la descripción corta
-description: Aca va la descripción
+short_description: La placa Arduino Leonardo se conecta mediante USB a la computadora. Articula la electrónica del sistema con la lógica que controla la optomecánica según las necesidades del usuario.
+description: La placa Arduino Leonardo, conectada mediante USB a la computadora, articula la electrónica del sistema con la lógica que controla la optomecánica según las necesidades del usuario. La misma está programada con funciones básicas, una sintaxis simple y modificable por el usuario que permite controlar más de un motor y/o shutter. Posteriormente, con cualquier software que permita la comunicación con el puerto USB de la computadora, se envían las órdenes secuenciales a la placa Arduino para realizar las rutinas requeridas. 
 highlights:
- - Aplicación1
- - Aplicación2
- - Aplicacion3
+ - Hardware libre de bajo costo
+ - Programado con funciones básicas simples modificables por el usuario
+ - Permite controlar varios dispositivos mediante comunicación USB simultáneamente
 github:
 pictures:
- - SH01_01.jpg
+ - CTRL1_01.jpg
 movies:
  - bla
 specs:
-   velocidad: algo
+   Modelo: Leonardo (adaptable a otros modelos)
+   Comunicación: USB

@@ -1,14 +1,17 @@
-title: Obturador de Haz de 1\"
-short_description: Aca va la descripción corta
-description: Aca va la descripción
+title: Obturador de Haz de 1"
+short_description: El shutter de 1” tiene un tiempo de apertura de 10 ms. Durante la operación se mantiene en posición cerrada, abriéndose cuando se aplica la señal de control. La frecuencia de apertura puede ser controlada.
+description: El shutter de 1” tiene un tiempo de apertura de 10 ms. Durante la operación se mantiene en posición cerrada, abriéndose cuando se aplica la señal de control. La frecuencia de apertura puede ser controlada. Está diseñado a partir de piezas de bajo costo fabricadas con una impresora 3D de baja gama y piezas recicladas de viejos discos rígidos para notebooks. Es accionable por medio de una señal TTL potenciada desde un terminal BNC, pudiendo ser conectado a la placa Arduino para su comunicación con una PC.
 highlights:
- - Aplicación1
- - Aplicación2
- - Aplicacion3
+ - Tiempo de apertura de 10ms
+ - Opera a frecuencias continuas hasta 10Hz
+ - Controlable por TTL o a través del CTRL1 (Arduino)
 github:
 pictures:
  - SH01_01.jpg
 movies:
  - bla
 specs:
-   velocidad: algo
+   Tensión nominal: 12V
+   Corriente Máxima: 3A
+   Tasa máxima de disparo: 10Hz
+   Tiempo de apertura: 10ms
