@@ -12,7 +12,8 @@ Page = collections.namedtuple('Page', 'url title icon')
 pages = (Page('index', 'HOME', None), Page('about', 'QUIENES SOMOS', None),
          Page('devices', 'DISPOSITIVOS', None))
 
-social = (Page('https://github.com/projectsoma', 'GitHub', 'github'), )
+social = (Page('https://github.com/projectsoma', 'GitHub', 'github'),
+          Page('https://www.youtube.com/channel/UCYGj-PiTrQdITk1zw7kcw7g', 'YouTube', 'youtube-play'))
 
 
 def ordered_load(stream, Loader=yaml.Loader, object_pairs_hook=collections.OrderedDict):
