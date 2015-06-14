@@ -5,11 +5,16 @@ highlights:
  - Tiempo de intercambio menor a 0,2s
  - 5 posiciones para filtros de 1” y hasta 7mm de espesor
  - secuencias de filtros programables
-github:
+github: https://github.com/projectsoma/FW10
 pictures:
- - FW01_05.jpg
+ - FW10_05.jpg
+ - FW10_01.jpg
+ - FW10_02.jpg
+ - FW10_03.jpg
+ - FW10_04.jpg
+ - FW10_06.jpg
 movies:
- - bla
+ - '<iframe width="560" height="315" src="https://www.youtube.com/embed/P3UxMO1CURY" frameborder="0" allowfullscreen></iframe>'
 specs:
    Número de filtros: 5
    Diámetro de Filtro: 1" (25,4mm)

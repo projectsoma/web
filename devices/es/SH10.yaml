@@ -5,11 +5,13 @@ highlights:
  - Tiempo de apertura de 10ms
  - Opera a frecuencias continuas hasta 10Hz
  - Controlable por TTL o a través del CTRL1 (Arduino)
-github:
+github: https://github.com/projectsoma/SH10
 pictures:
- - SH01_01.jpg
+ - SH10_01.jpg
+ - SH10_02.jpg
+ - SH10_SH05.jpg
 movies:
- - bla
+ - '<iframe width="560" height="315" src="https://www.youtube.com/embed/Q64MoV0qLY0" frameborder="0" allowfullscreen></iframe>'
 specs:
    Tensión nominal: 12V
    Corriente Máxima: 3A
