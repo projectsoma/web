@@ -15,6 +15,18 @@ pages = (Page('index', 'HOME', None), Page('about', 'QUIENES SOMOS', None),
 social = (Page('https://github.com/projectsoma', 'GitHub', 'github'), )
 
 
+def ordered_load(stream, Loader=yaml.Loader, object_pairs_hook=collections.OrderedDict):
+    class OrderedLoader(Loader):
+        pass
+    def construct_mapping(loader, node):
+        loader.flatten_mapping(node)
+        return object_pairs_hook(loader.construct_pairs(node))
+    OrderedLoader.add_constructor(
+        yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,
+        construct_mapping)
+    return yaml.load(stream, OrderedLoader)
+
+
 def read_devices(folder):
 
     d = []
@@ -22,7 +34,7 @@ def read_devices(folder):
     for f in folder.glob('*.yaml'):
 
         with f.open('r', encoding='utf-8') as fp:
-            dev = yaml.load(fp)
+            dev = ordered_load(fp, yaml.SafeLoader)
             dev['code'] = f.stem
             d.append((f.stem, dev))
 

@@ -47,11 +47,23 @@
 				</table>
 			</div>
 			<div id="build" class="tab-pane">
-				nada aun
-				<a href="{{ github }}"><i class="fa fa-github }}"></i>{{ github }}</a>
+				<i class="fa fa-github }}"></i>&nbsp;&nbsp;<a href="{{ github }}">{{ github }}</a>
 			</div>
 			<div id="multimedia" class="tab-pane">
-				Nada aun
+				{% if movies %}
+					{% for item in movies %}
+						{{ item }}
+					{% endfor %}
+				{% endif %}
+				<br/>
+				<hr>
+				<br/>
+				<div class="galleria">
+					{% for item in pictures %}
+						<img src="{{ rel_root }}assets/img/{{ item }}" data-title="{{ item }}" data-description="{{ item }}">
+					{% endfor %}
+				</div>
+
 			</div>
 		</div><!-- /.tab-content -->
 	</div><!-- /.tabbable -->
@@ -62,3 +74,14 @@
 <br/>
 
   {% endblock %}
+
+{% block after_jquery %}
+<style>
+		.galleria{ width: 700px; height: 400px; background: #000 }
+</style>
+<script src="{{ rel_root }}assets/galleria/galleria-1.4.2.min.js"></script>
+<script languaje=''>
+		Galleria.loadTheme('{{ rel_root }}assets/galleria/galleria.classic.min.js');
+		Galleria.run('.galleria');
+</script>
+{% endblock %}
