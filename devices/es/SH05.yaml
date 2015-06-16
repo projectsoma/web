@@ -1,12 +1,11 @@
-title: Obturador del Haz de 1/2"
-short_description: El shutter de ½
- tiene un tiempo de apertura de 2 ms. Durante la operación se mantiene en posición cerrada, abriéndose cuando se aplica la señal de control. La frecuencia de apertura puede ser controlada.
-description: El shutter de ½
- tiene un tiempo de apertura de 2 ms. Durante la operación se mantiene en posición cerrada, abriéndose cuando se aplica la señal de control. La frecuencia de apertura puede ser controlada. Está diseñado a partir de piezas de bajo costo fabricadas con una impresora 3D de baja gama y piezas recicladas de viejos discos rígidos para notebooks. Es accionable por medio de una señal TTL potenciada desde un terminal BNC, pudiendo ser conectado a la placa Arduino para su comunicación con una PC.
+title: Obturador de haz de 10mm
+short_description: El obturador de 10mm es veloz y de tamaño reducido. El tiempo de apertura y cerrado es menor a 10ms y cuenta con una cuchilla de aluminio que puede soportar potencias altas.
+description: El shutter de 10mm tiene un tiempo de apertura de 10ms y cuena con una cuchilla de aluminio para trabajar altas potencias ópticas. Está diseñado a partir de piezas de bajo costo fabricadas con una impresora 3D de baja gama y piezas recicladas de discos rígidos para notebooks. Es accionable por medio de una señal TTL potenciada desde un terminal BNC, pudiendo ser conectado a la placa Arduino para su comunicación con una PC.
 highlights:
- - Tiempo de apertura de 2ms
+ - Tiempo de apertura de 10ms
  - Opera a frecuencias continuas hasta 50Hz
  - Controlable por TTL o a través del CTRL1 (Arduino)
+ - Cuchilla de aluminio para potencias altas
 github: https://github.com/projectsoma/SH05
 pictures:
  - SH05_01.jpg
