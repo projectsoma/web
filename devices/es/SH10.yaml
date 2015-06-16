@@ -1,6 +1,6 @@
 title: Obturador de Haz de 1"
-short_description: El obturador de 1” es versátil por su diámetro y velocidad. El tiempo de apertura y cerrado es menor a 10ms. Accionable una señal de tipo TTL de potencia, pudiede ser controlado desde una PC.
-description: El obturador de 1” es versátil por su diámetro y velocidad. El tiempo de apertura y cerrado es menor a 10ms. Está diseñado a partir de piezas de bajo costo fabricadas con una impresora 3D de baja gama y piezas recicladas de discos rígidos para notebooks. Es accionable por medio de una señal TTL potenciada desde un terminal BNC, pudiendo ser conectado a la placa Arduino para su comunicación con una PC.
+short_description: El obturador de 1” es versátil por su diámetro y velocidad. El tiempo de apertura y cerrado es menor a 10ms.  Es accionable por medio de una señal TTL potenciada, pudiendo ser conectado a una placa Arduino para su comunicación con a la PC.
+description: El obturador de 1” es versátil por su diámetro y velocidad. El tiempo de apertura y cerrado es menor a 10ms. Está diseñado a partir de piezas de bajo costo fabricadas con una impresora 3D de baja gama y piezas recicladas de discos rígidos para notebooks. Es accionable por medio de una señal TTL potenciada desde un terminal BNC, pudiendo ser conectado a una placa Arduino para su comunicación con a la PC.
 highlights:
  - Tiempo de apertura de 10ms
  - Frecuencias de operación hasta 10Hz
