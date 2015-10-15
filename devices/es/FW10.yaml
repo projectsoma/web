@@ -22,3 +22,4 @@ specs:
    Tiempo entre posiciones: <0,2s
    Apertura del orificio: 0,85" (21,4mm)
    Repetibilidad: +/-4º
+build_info: FW10_build.html

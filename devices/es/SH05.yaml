@@ -18,3 +18,4 @@ specs:
    Corriente Máxima: 3A
    Tasa máxima de disparo: 50Hz
    Tiempo de apertura: 2ms
+build_info: SH_build.html

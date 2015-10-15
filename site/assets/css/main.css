@@ -338,3 +338,11 @@ a:after {
     width: auto;
     height: auto;
 }
+
+.img-build {
+    display: block;
+    max-width:400px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}

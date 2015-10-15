@@ -37,6 +37,16 @@ def read_devices(folder):
         with f.open('r', encoding='utf-8') as fp:
             dev = ordered_load(fp, yaml.SafeLoader)
             dev['code'] = f.stem
+
+            try:
+                with folder.joinpath(dev['build_info']).open('r', encoding='utf-8') as fi:
+                    dev['build_info'] = fi.read()
+            except KeyError:
+                print('No extra build info for %s' % dev['code'])
+                dev['build_info'] = ''
+            except Exception as e:
+                print('Error while loading build info for %s: %s' % (dev['code'], e))
+                dev['build_info'] = ''
             d.append((f.stem, dev))
 
     return collections.OrderedDict(sorted(d))
