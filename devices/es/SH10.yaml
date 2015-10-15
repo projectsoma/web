@@ -6,7 +6,7 @@ highlights:
  - Frecuencias de operación hasta 10Hz
  - Controlable por TTL o a través del CTRL1 (Arduino)
  - Cuchilla plástica de gran diámetro.
-github: https://github.com/projectsoma/SH10
+github: https://github.com/jubujjamer/SH10
 pictures:
  - SH10_01.jpg
  - SH10_02.jpg
